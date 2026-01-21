@@ -82,7 +82,8 @@ img {
 
 /* Utility Classes */
 .ib {
-    display: inline-block;
+    display: inline;
+    /* Default to normal inline text */
 }
 
 .section-padding {
@@ -653,6 +654,11 @@ img {
 @media (max-width: 768px) {
     .mobile-only {
         display: block;
+    }
+
+    .ib {
+        display: inline-block;
+        /* Prevent mid-word breaks on mobile */
     }
 
     .hero-title {
